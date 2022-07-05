@@ -16,14 +16,22 @@
             <div class="line"></div>
         </div>
         <nav class="nav-bar">
-            <ul>
+            <ul class="testx">
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#" class="active">Features</a></li>
-                <li><a href="#" class="active">Pricing</a></li>
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#" class="active">Contact</a></li>
+                <li><a href="#" >Features</a></li>
+                <li><a href="#" >Pricing</a></li>
+                <li><a href="#" >About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <script>
+       const hamburger = document.querySelector(".hamburger");
+       hamburger.onclick = () => {
+        const navbar = document.querySelector(".nav-bar");
+        navbar.classList.toggle("active");
+       }
+    </script>
 </body>
 </html>
